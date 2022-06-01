@@ -35,7 +35,7 @@ class AddStudent extends Component {
     render()  { 
       return (
           <div>
-            <Button variant="outlined" color="primary" style={{margin: 10}} onClick={this.handleClickOpen}>
+            <Button variant="outlined" id="addstudentbtn" color="primary" style={{margin: 10}} onClick={this.handleClickOpen}>
             Add New Student
             </Button>
             <Dialog open={this.state.open} onClose={this.handleClose}>
@@ -48,7 +48,7 @@ class AddStudent extends Component {
                 </DialogContent>
                 <DialogActions>
                   <Button color="secondary" onClick={this.handleClose}>Cancel</Button>
-                  <Button color="primary" onClick={this.handleAdd}>Add</Button>
+                  <Button color="primary" id="addstudentsubmit" onClick={this.handleAdd}>Add</Button>
                 </DialogActions>
               </Dialog>      
           </div>
